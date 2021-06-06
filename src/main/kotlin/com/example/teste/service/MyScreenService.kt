@@ -1,22 +1,12 @@
 package com.example.teste.service
 
-import br.com.zup.beagle.widget.core.TextAlignment
-import br.com.zup.beagle.widget.layout.Screen
 import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.beagle.widget.ui.Text
+import com.example.teste.response.MyScreenDetailResponse
+import com.example.teste.response.MyScreenResponse
 import org.springframework.stereotype.Service
 
 @Service
 class MyScreenService {
-    fun getMyScreen(): ScreenBuilder = MyScreen()
-}
-
-class MyScreen : ScreenBuilder {
-    override fun build() = Screen(
-            child = Text(
-                    text = "Testando essa porra! ",
-                    alignment = TextAlignment.CENTER,
-                    textColor = "#505050"
-            )
-    )
+    fun getMyScreen(): ScreenBuilder = MyScreenResponse()
+    fun getMyScreenDetail(): ScreenBuilder = MyScreenDetailResponse()
 }
