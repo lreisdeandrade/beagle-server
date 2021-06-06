@@ -9,5 +9,8 @@ import org.springframework.web.bind.annotation.RestController
 class MyScreenController(private val service: MyScreenService) {
 
     @GetMapping("/screen")
-    fun getScreen() : ScreenBuilder = service.getMyScreen()
+    fun getScreen(): ScreenBuilder = service.getMyScreen()
+
+    @GetMapping("/detail")
+    fun getScreenDetail(): ScreenBuilder = service.getMyScreenDetail()
 }
