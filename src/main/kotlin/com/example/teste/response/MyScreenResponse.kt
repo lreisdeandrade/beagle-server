@@ -33,7 +33,7 @@ class MyScreenResponse : ScreenBuilder {
             )
 
     private fun navBar(): NavigationBar {
-        return NavigationBar(title = "Testando Poc")
+        return NavigationBar(title = "Produto camiseta do vitao")
     }
 
     private fun screenWidgets(): Widget {
